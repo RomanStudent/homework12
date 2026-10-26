@@ -7,7 +7,7 @@ print(income)
 net_income = income * 0.7
 print(net_income)
 
-net_income_recalculated = income * 0.7
+net_income_recalculated = net_income.copy()
 net_income_recalculated[:, 4:7] = income[:, 4:7] * 0.6
 print(net_income_recalculated)
 
